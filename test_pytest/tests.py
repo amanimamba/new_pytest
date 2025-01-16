@@ -10,7 +10,7 @@ class TestProductAPI:
 
     def test_create_product(self):
         response = self.client.post('/products/', {
-            'name': 'New Product',
+            'name': '',
             'price': 20.00,
             'description': 'A new product'
         })
